@@ -1,8 +1,10 @@
 {
+  "homepage": "https://marcin324.github.io/sudoku_redux",
   "name": "sudoku_redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
@@ -12,6 +14,8 @@
     "sudoku-umd": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
